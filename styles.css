@@ -1,15 +1,11 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
+
 
 #grid {
     display: grid;
-    grid-template-columns: repeat(4, 242.5px);
-    grid-template-rows: repeat(5, 124px);
-    gap: 10px;
-    height: calc(5 * 124px + 4 * 10px); /* total height to exactly fit 5 rows and 4 gaps */
+    grid-template-columns: 242.5px 242.5px 242.5px 242.5px;
+    grid-template-rows: 124px 124px 124px 124px 124px;
+    gap: 10px 10px;
+    height: 100vh;
     box-sizing: border-box;
 }
 
@@ -45,7 +41,7 @@ body {
 }
 
 .grid-item:nth-child(5) {
-    grid-column: span 1 / auto; /* Correct span based on the requirement */
+    grid-column: span 2 / auto;
     grid-row: 3 / span 2;
 }
 
