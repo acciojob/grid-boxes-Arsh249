@@ -3,9 +3,9 @@
     grid-template-columns: repeat(4, 242.5px);
     grid-template-rows: repeat(5, 124px);
     grid-gap: 10px 10px;
-    height: calc(5 * 124px + 4 * 10px); /* total height to exactly fit 5 rows and 4 gaps */
-    box-sizing: border-box;
-}
+    /* height: calc(5 * 124px + 4 * 10px); /* total height to exactly fit 5 rows and 4 gaps */ */
+    /* box-sizing: border-box;
+} */
 
 #grid > div {
     background-color: green;
@@ -39,7 +39,7 @@
 }
 
 #grid > div:nth-child(5) {
-    grid-column: span 1 / auto; /* Correct span based on the requirement */
+    grid-column: span 2 / auto; /* Correct span based on the requirement */
     grid-row: 3 / span 2;
 }
 
