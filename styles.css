@@ -10,7 +10,6 @@ body {
     grid-template-rows: repeat(5, 124px);
     gap: 10px;
     height: 100vh;
-    padding: 10px;
     box-sizing: border-box;
 }
 
@@ -47,7 +46,7 @@ body {
 
 .grid-item:nth-child(5) {
     grid-column: span 2 / auto;
-    grid-row: 3;
+    grid-row: 3 / span 2;
 }
 
 .grid-item:nth-child(6) {
