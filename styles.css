@@ -61,6 +61,6 @@
         }
 
         .content8 {
-            grid-column: 2 / span 3;
+            grid-column: span 3;
             grid-row: 5;
         }
