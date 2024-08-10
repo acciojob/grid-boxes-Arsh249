@@ -6,6 +6,7 @@
             background-color: white;
             padding: 10px;
             width: 1000px;
+			 text-align:left;
         }
 
         .grid-item {
@@ -17,7 +18,7 @@
         }
 
         .header {
-            grid-column: 1 / span 4;
+            grid-column: span 4 / auto;
         }
 
         .sidebar {
