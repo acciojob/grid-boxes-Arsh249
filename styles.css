@@ -31,12 +31,12 @@
         }
 
         .content2 {
-            grid-column: span 2 / auto;
+            grid-column: 3 / span 2;
             grid-row: 2;
         }
 
         .content3 {
-            grid-column: span 2 / auto;
+            grid-column: 2;
             grid-row: 3;
         }
 
@@ -61,6 +61,6 @@
         }
 
         .content8 {
-            grid-column: span 3 / auto;
+            grid-column: 2 / span 3;
             grid-row: 5;
         }
