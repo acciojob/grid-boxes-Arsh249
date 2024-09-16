@@ -1,66 +1,51 @@
- #grid {
-            display: grid;
-            grid-template-rows: repeat(5, 124px);
-            grid-template-columns: repeat(4, 242.5px);
-            grid-gap: 10px;
-            background-color: white;
-            padding: 10px;
-            width: 1000px;
-			 text-align:left;
-        }
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Adjust column widths as needed */
+  grid-template-rows: 1fr auto; /* Adjust row heights as needed */
+  grid-template-areas:
+    "header header"
+    "sidebar content1 content2"
+    "sidebar content3 content4"
+    "sidebar content5 content6"
+    "sidebar content7 content8";
+}
 
-        .grid-item {
-            background-color: green;
-            border: 5px solid white;
-            text-align: center;
-            font-size: 30px;
-            color: white;
-        }
+.header {
+  grid-area: header;
+}
 
-        .header {
-            grid-column: span 4 / auto;
-        }
+.sidebar {
+  grid-area: sidebar;
+}
 
-        .sidebar {
-            grid-row: span 4 / auto;
-        }
+.content1 {
+  grid-area: content1;
+}
 
-        .content1 {
-            grid-column: 2;
-            grid-row: 2;
-        }
+.content2 {
+  grid-area: content2;
+}
 
-        .content2 {
-            grid-column: span 2 / auto;
-            grid-row: 2;
-        }
+.content3 {
+  grid-area: content3;
+}
 
-        .content3 {
-            grid-column: span 2;
-            grid-row: 3;
-        }
+.content4 {
+  grid-area: content4;
+}
 
-        .content4 {
-            grid-column: 3 / span 2;
-            grid-row: 3;
-        }
+.content5 {
+  grid-area: content5;
+}
 
-        .content5 {
-            grid-column: 2;
-            grid-row: 4;
-        }
+.content6 {
+  grid-area: content6;
+}
 
-        .content6 {
-            grid-column: 3;
-            grid-row: 4;
-        }
+.content7 {
+  grid-area: content7;
+}
 
-        .content7 {
-            grid-column: 4;
-            grid-row: 4;
-        }
-
-        .content8 {
-            grid-column: span 3;
-            grid-row: 5;
-        }
+.content8 {
+  grid-area: content8;
+}
