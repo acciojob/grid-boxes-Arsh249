@@ -27,10 +27,12 @@
 
 .content2 {
   grid-area: content2;
+	grid-column: span 2 / auto;
 }
 
 .content3 {
   grid-area: content3;
+	grid-column: span 2 / auto;
 }
 
 .content4 {
@@ -51,4 +53,5 @@
 
 .content8 {
   grid-area: content8;
+	grid-column: span 3 / auto;
 }
