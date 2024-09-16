@@ -13,10 +13,12 @@
 
 .header {
   grid-area: header;
+	grid-column: span 4 / auto;
 }
 
 .sidebar {
   grid-area: sidebar;
+	grid-row: span 4 / auto;
 }
 
 .content1 {
