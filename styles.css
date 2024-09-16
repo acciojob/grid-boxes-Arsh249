@@ -1,13 +1,14 @@
 #grid {
   display: grid;
-  grid-template-columns: 1fr 2fr; /* Adjust column widths as needed */
-  grid-template-rows: 1fr auto; /* Adjust row heights as needed */
+  grid-template-columns: repeat(4, 1fr); /* Adjust column count and widths as needed */
+  grid-template-rows: 124px 124px 124px 124px 124px; /* Set row heights as needed */
+  grid-gap: 10px;
   grid-template-areas:
-    "header header"
-    "sidebar content1 content2"
-    "sidebar content3 content4"
-    "sidebar content5 content6"
-    "sidebar content7 content8";
+    "header header header header"
+    "sidebar content1 content2 content3"
+    "sidebar content4 content5 content6"
+    "sidebar content7 content8 content9"
+    "sidebar content10 content11 content12"; /* Adjust grid areas based on your layout */
 }
 
 .header {
